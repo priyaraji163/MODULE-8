@@ -26,9 +26,22 @@ To write a Python function that takes a long string and a specified width, and r
 
 
 ## 🧪 Program
-Add Code Here
+```
+def wrap(string, max_width):
+    wrapped_lines = []
+    for i in range(0, len(string), max_width):
+        wrapped_lines.append(string[i:i+max_width])
+    return '\n'.join(wrapped_lines)
+
+string = input()
+max_width = int(input())
+print(wrap(string, max_width))
+```
 
 ## Sample Output
+<img width="992" height="320" alt="image" src="https://github.com/user-attachments/assets/a70c93e0-53be-442a-8a0c-9637c85cf9f4" />
+
 
 ## Result
+Thus, the output is verified successfully
 
